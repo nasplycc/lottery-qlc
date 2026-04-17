@@ -1,0 +1,39 @@
+{
+  "lottery_name": "七乐彩",
+  "lottery_code": "qlc",
+  "red_ball_range": [1, 30],
+  "red_ball_count": 7,
+  "special_ball_range": [1, 30],
+  "special_ball_count": 1,
+  "draw_days": ["Monday", "Wednesday", "Friday"],
+  "draw_time": "21:15",
+  "cost_per_bet": 2,
+  "prize_rules": {
+    "tier_1": {"red": 7, "special": 0, "prize": "floating"},
+    "tier_2": {"red": 7, "special": 1, "prize": "floating"},
+    "tier_3": {"red": 6, "special": 1, "prize": "fixed"},
+    "tier_4": [{"red": 6, "special": 0}, {"red": 5, "special": 1}],
+    "tier_5": [{"red": 5, "special": 0}, {"red": 4, "special": 1}],
+    "tier_6": [{"red": 4, "special": 0}, {"red": 3, "special": 1}],
+    "tier_7": [{"red": 3, "special": 0}, {"red": 2, "special": 1}]
+  },
+  "default_prize_amounts": {
+    "tier_1": 1000000,
+    "tier_2": 100000,
+    "tier_3": 10000,
+    "tier_4": 200,
+    "tier_5": 50,
+    "tier_6": 10,
+    "tier_7": 5
+  },
+  "selection_rules": {
+    "min_sum": 80,
+    "max_sum": 150,
+    "odd_even_ratios": ["3:4", "4:3", "5:2", "2:5"],
+    "zone_ratios": ["2:2:3", "2:3:2", "3:2:2", "3:3:1", "1:3:3"],
+    "zones": [[1, 10], [11, 20], [21, 30]],
+    "consecutive_min": 0,
+    "consecutive_max": 2,
+    "repeat_from_last": [0, 1, 2]
+  }
+}
